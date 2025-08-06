@@ -1,0 +1,10 @@
+                   STUDENT PORTAL APPLICCATION
+                                                      
+
+            Name              : G.Pranamya
+            Course            : BCA
+            Phone number      : 9876543210
+            Hall Ticket number:123127206044
+            Email             :pranamyagunana@gmail.com
+            Address           : Seetammapeta,Visakhapatnam
+                         
