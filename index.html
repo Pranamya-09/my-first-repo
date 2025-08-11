@@ -1,11 +1,83 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>
-First Page
-</title>
+  <title>HYBS Café</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdf6f0;
+      color: #4b2e2e;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #d4a373;
+      padding: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+    .menu {
+      margin: 20px auto;
+      max-width: 300px;
+      padding: 10px;
+      border: 2px solid #d4a373;
+      border-radius: 10px;
+      background: white;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px 15px;
+      background: #d4a373;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #c0895b;
+    }
+    #message {
+      margin-top: 10px;
+      font-style: italic;
+      color: green;
+    }
+  </style>
 </head>
 <body>
-<h2>Hello World!</h2>
+  <header>Welcome to HYBS Café ☕</header>
+
+  <div class="menu">
+    <div class="menu-item"><span>Latte</span> <span>₹120</span></div>
+    <div class="menu-item"><span>Cappuccino</span> <span>₹110</span></div>
+    <div class="menu-item"><span>Espresso</span> <span>₹90</span></div>
+    <div class="menu-item"><span>Mocha</span> <span>₹130</span></div>
+    <button onclick="orderCoffee()">Order Coffee</button>
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function orderCoffee() {
+      let name = prompt("What's your name?");
+      if (name) {
+        document.getElementById("message").textContent =
+          "Thanks, " + name + "! Your coffee will be ready soon. ☕";
+      } else {
+        document.getElementById("message").textContent =
+          "Please enter your name to place an order.";
+      }
+    }
+  </script>
 </body>
 </html>
